@@ -1,54 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- // hey fuck you -->
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script type="module" src="/src/main.ts"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clipboard Manager</title>
-  <style>
-    body {
-      font-family: monospace;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 10px;
-    }
-
-    h2 {
-      text-align: center;
-      margin-top: 0;
-    }
-
-    #clipboard-list {
-      max-height: 300px;
-      overflow-y: auto;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      padding: 5px;
-      background: #fff;
-    }
-
-    .entry {
-      padding: 6px;
-      border-bottom: 1px solid #eee;
-      cursor: pointer;
-      transition: background 0.2s;
-    }
-
-    .entry:hover {
-      background: #dfefff;
-    }
-
-    .entry:last-child {
-      border-bottom: none;
-    }
-  </style>
+  <link rel="stylesheet" href="/src/styles.css">
+  <script type="module" src="/src/main.ts" defer></script>
 </head>
 
 <body>
-  <h2>Clipboard Manager</h2>
-  <!-- This is the div your TS will reference -->
+  <!-- Draggable header -->
+  <div id="header">Clipboard Manager</div>
+
+  <!-- Scrollable clipboard list -->
   <div id="clipboard-list"></div>
 </body>
 
